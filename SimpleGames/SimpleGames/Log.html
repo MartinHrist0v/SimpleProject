@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SimpleGames - Sign In</title>
+    <link rel="stylesheet" href="style/styles.css"/>
+</head>
+<body>
+<header>
+    <div id="headContainer">
+        <div id="logo">
+            <img src="images/simple-logo.png" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Games</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">Game #1</a>
+                        </li>
+                        <li>
+                            <a href="#">Game #2</a>
+                        </li>
+                        <li>
+                            <a href="#">Game #3</a>
+                        </li>
+                        <li>
+                            <a href="#">Game #4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                </li>
+                <li>
+                    <a href="#">Hall of Fame</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">Of the Day</a>
+                        </li>
+                        <li>
+                            <a href="#">Of the Week</a>
+                        </li>
+                        <li>
+                            <a href="#">Of the Month</a>
+                        </li>
+                        <li>
+                            <a href="#">All Time</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="content">
+    <h2>Log in to the System</h2>
+    <div class="register"></div>
+    <div class="login">
+        <form class="login-form" method="post" novalidate="novalidate" role="form" >
+            <h5 class="registeredSpan">
+                <span>LogIn</span>
+            </h5>
+            <label class="emailLog">
+                <input class="form-control" data-val="true" data-val-length="Account name has to be between 5 and 35 characters."
+                       data-val-length-max="32" data-val-length-min="5" data-val-regex="The account name is not in the valid registration form"
+                       data-val-regex-pattern="^[a-zA-Z]([/._]?[a-zA-Z0-9]+)+$" data-val-required="Please enter an user name" id="LoginUserName"
+                       type="text" placeholder="Account Name" value>
+                <span class="field-validation-valid" data-valmsg-for="LoginUserName" data-valmsg-replace="true"></span>
+            </label>
+            <label class="passwordLog">
+                <input class="form-control" data-val="true" data-val-length="The password needs to have at least 6 symbols."
+                       data-val-length-max="1000" data-val-length-min="6" data-val-required="Please, enter your password"
+                       id="LoginPassword" name="LoginPassword" placeholder="Password" type="password">
+                <span class="field-validation-valid" data-valmsg-for="LoginPassword" data-valmsg-replace="true"></span>
+            </label>
+            <div class="bottomLog">
+                <div class="rememberMe">
+                    <input data-val="true"
+                           id="login-checkbox" name="LoginRememberMe" type="checkbox" value="true">
+                    <label class="chkBox" for="login-checkbox">Remember Me?</label>
+                </div>
+                <div class="loginButton">
+                    <input type="submit" class="loginMain" value="Login">
+                    <a class="hover-underlined-link" href="">Forgotten Password</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
